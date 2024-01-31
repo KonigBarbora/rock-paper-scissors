@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="icon" href="images/dice.png" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <audio
+      id="loseSound"
+      src="Sounds/8d82b5_Doctor_Sheldon_Cooper_for_the_Win_Sound_Effect.mp3"
+      style="display: none"
+    ></audio>
+    <audio
+      id="winSound"
+      src="Sounds/8d82b5_Howard_Wolowitz_I_am_the_Swordmaster_Sound_Effect.mp3"
+      style="display: none"
+    ></audio>
+    <audio
+      id="rockSound"
+      src="Sounds/8d82b5_Sheldon_Geology_isnt_a_Real_Science_Sound_Effect.mp3"
+      style="display: none"
+    ></audio>
+    <audio
+      id="spockSound"
+      src="Sounds/8d82b5_Sheldon_Life_Long_and_Prosper_Sound_Effect.mp3"
+      style="display: none"
+    ></audio>
+    <audio
+      id="rulesSound"
+      src="Sounds/8d82b5_TBBT_Rock_Paper_Scissors_Lizard_Spock_Sound_Effect.mp3"
+      style="display: none"
+    ></audio>
+    <div id="rules">
+      <img
+        id="sheldon"
+        src="images/1fe3eb30905ca7ff601d194dac7e9f51.jpg"
+        alt="Sheldon"
+      />
+      <span class="rules-text">PLAY ME!</span>
+    </div>
+    <h1>
+      Rock Paper Scissors <br />
+      ___ Lizard Spock ___
+    </h1>
+
+    <div id="playground">
+      <h2>CHOOSE:</h2>
+      <div id="playground-img">
+        <img class="rock img-hover img-style" src="images/1-png" alt="rock" />
+        <img class="paper img-hover img-style" src="images/2-png" alt="paper" />
+        <img
+          class="scissors img-hover img-style"
+          src="images/3-png"
+          alt="scissors"
+        />
+        <img
+          class="lizard img-hover img-style"
+          src="images/4-png"
+          alt="lizard"
+        />
+        <img class="spock img-hover img-style" src="images/5-png" alt="spock" />
+      </div>
+      <div id="playground-score">
+        <div class="score">
+          <span class="text">WON:</span>
+          <span class="number number-won">0</span>
+        </div>
+        <div class="score">
+          <span class="text">LOST:</span>
+          <span class="number number-lost">0</span>
+        </div>
+        <div class="score">
+          <span class="text">DRAW:</span>
+          <span class="number number-draw">0</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="btn-new" class="btn">NEW GAME</button>
+      <button id="btn-next" class="btn">NEXT ROUND</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
